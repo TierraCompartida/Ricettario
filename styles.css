@@ -14,10 +14,11 @@ body {
 
 /* Hero */
 .hero {
-  background: linear-gradient(
-      rgba(0, 53, 53, 0.6),
-      rgba(0, 53, 53, 0.7)
-    ),
+  background-color: #004c4c;
+  color: #fdfaf4;
+  padding: 6rem 1.5rem;
+  text-align: center;
+},
     url("img/hero-food.jpg") center/cover no-repeat;
   color: #fdfaf4;
   padding: 6rem 1.5rem;
