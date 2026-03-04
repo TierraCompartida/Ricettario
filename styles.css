@@ -171,3 +171,68 @@ body {
     font-size: 3.2rem;
   }
 }
+/* Pagina ricetta */
+.pagina-ricetta {
+  background-color: #f5f0e8;
+}
+
+.header-ricetta {
+  text-align: center;
+  padding: 2.5rem 1rem 1rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.header-ricetta h1 {
+  font-size: 2rem;
+  color: #23402a;
+}
+
+.sottotitolo-paese {
+  color: #6b5b4b;
+  margin-top: 0.3rem;
+}
+
+.hero-ricetta img {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+}
+
+.contenuto-ricetta {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+}
+
+.box-ricetta {
+  background-color: #fdfaf4;
+  padding: 1.8rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.box-ricetta h2 {
+  margin-bottom: 1rem;
+  color: #23402a;
+}
+
+.box-ricetta ul,
+.box-ricetta ol {
+  margin-left: 1.2rem;
+  color: #2f2a24;
+  line-height: 1.6;
+}
