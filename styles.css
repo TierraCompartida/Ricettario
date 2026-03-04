@@ -1,0 +1,173 @@
+/* Reset semplice */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #f5f0e8; /* beige chiaro */
+  color: #2f2a24;            /* marrone scuro */
+  line-height: 1.6;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(
+      rgba(20, 40, 30, 0.6),
+      rgba(20, 40, 30, 0.7)
+    ),
+    url("img/hero-food.jpg") center/cover no-repeat;
+  color: #fdfaf4;
+  padding: 6rem 1.5rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  border-radius: 999px;
+  background-color: #2e7d32; /* verde principale */
+  color: #fdfaf4;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #256428;
+  transform: translateY(-1px);
+}
+
+/* Sezioni */
+.section {
+  padding: 3.5rem 1.5rem 4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #23402a;
+}
+
+.section-subtitle {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #6b5b4b;
+}
+
+/* Griglia ricette */
+.grid-ricette {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.8rem;
+}
+
+.card-ricetta {
+  background-color: #fdfaf4;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-ricetta a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  height: 100%;
+}
+
+.card-ricetta:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Immagine + tag paese */
+.card-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image-wrapper img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.card-ricetta:hover .card-image-wrapper img {
+  transform: scale(1.06);
+}
+
+.card-tag {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  background-color: rgba(46, 125, 50, 0.9);
+  color: #fdfaf4;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Contenuto card */
+.card-content {
+  padding: 1.1rem 1.2rem 1.3rem;
+}
+
+.card-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  color: #2f2a24;
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  color: #6b5b4b;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1.5rem 1rem 2rem;
+  font-size: 0.9rem;
+  color: #6b5b4b;
+}
+
+/* Responsivo */
+@media (min-width: 900px) {
+  .hero {
+    text-align: left;
+  }
+
+  .hero-content {
+    margin-left: 5%;
+  }
+
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+}
