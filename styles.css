@@ -7,22 +7,17 @@
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background-color: #f5f0e8; /* beige chiaro */
-  color: #003535;            /* testo scuro */
+  background-color: #f5f0e8;
+  color: #003535;
   line-height: 1.6;
 }
 
-/* Hero */
+/* Hero senza gradienti, colore netto */
 .hero {
   background-color: #004c4c;
   color: #fdfaf4;
   padding: 6rem 1.5rem;
-  text-align: center;
-},
-    url("img/hero-food.jpg") center/cover no-repeat;
-  color: #fdfaf4;
-  padding: 6rem 1.5rem;
-  text-align: center;
+  text-align: center; /* titolo centrato */
 }
 
 .hero-content {
@@ -34,18 +29,20 @@ body {
   font-size: 2.8rem;
   letter-spacing: 0.05em;
   margin-bottom: 1rem;
+  text-align: center; /* centrato */
 }
 
 .hero p {
   font-size: 1.1rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .btn-primary {
   display: inline-block;
   padding: 0.8rem 1.8rem;
   border-radius: 999px;
-  background-color: #004c4c; /* nuovo colore principale */
+  background-color: #003535;
   color: #fdfaf4;
   text-decoration: none;
   font-weight: 600;
@@ -53,7 +50,7 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #003535; /* hover più scuro */
+  background-color: #004c4c;
   transform: translateY(-1px);
 }
 
@@ -92,13 +89,6 @@ body {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.card-ricetta a {
-  color: inherit;
-  text-decoration: none;
-  display: block;
-  height: 100%;
-}
-
 .card-ricetta:hover {
   transform: translateY(-6px);
   box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
@@ -114,7 +104,6 @@ body {
   width: 100%;
   height: 210px;
   object-fit: cover;
-  display: block;
   transition: transform 0.4s ease;
 }
 
@@ -126,7 +115,7 @@ body {
   position: absolute;
   left: 12px;
   bottom: 12px;
-  background-color: rgba(0, 76, 76, 0.9); /* tag con nuovo colore */
+  background-color: #004c4c;
   color: #fdfaf4;
   padding: 0.25rem 0.7rem;
   border-radius: 999px;
@@ -158,21 +147,6 @@ body {
   color: #003535;
 }
 
-/* Responsivo */
-@media (min-width: 900px) {
-  .hero {
-    text-align: left;
-  }
-
-  .hero-content {
-    margin-left: 5%;
-  }
-
-  .hero h1 {
-    font-size: 3.2rem;
-  }
-}
-
 /* Pagina ricetta */
 .pagina-ricetta {
   background-color: #f5f0e8;
@@ -198,6 +172,7 @@ body {
 .header-ricetta h1 {
   font-size: 2rem;
   color: #004c4c;
+  text-align: center;
 }
 
 .sottotitolo-paese {
